@@ -1,0 +1,27 @@
+create database empresa;
+
+use empresa;
+
+create table produto(
+id int primary key auto_increment,
+nome varchar(50),
+marca varchar(50),
+preco decimal(10,2)
+);
+
+
+select * from produto;
+
+create table login(
+id int primary key auto_increment,
+nome varchar(50),
+usuario varchar(20),
+senha varchar(8)
+);
+
+select* from login;
+
+insert into login(nome,usuario,senha)
+values
+('ivanildo brito','ivanildo','123'),
+('maria socorro silva','maryhelp','abc');
